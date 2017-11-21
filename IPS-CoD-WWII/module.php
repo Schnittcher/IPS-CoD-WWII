@@ -23,7 +23,7 @@ class IPS_CoD_WWII extends IPSModule {
   }
 
   private function getPlayerStats() {
-    $Connector = new Connector($this->ReadPropertyInteger("Platform"),$this->ReadPropertyInteger("Username"));
+    $Connector = new Connector($this->ReadPropertyString("Platform"),$this->ReadPropertyString("Username"));
     $Player = new Player($Connector->getPlayer());
 
     SetValue($this->GetIDForIdent("Username"), $Player->getUsername());

@@ -19,7 +19,9 @@ class IPS_CoD_WWII extends IPSModule {
   public function ApplyChanges() {
       //Never delete this line!
       parent::ApplyChanges();
-      $this->getPlayerStats();
+      if (($this->ReadPropertyString("Platform") != "") AND ($this->ReadPropertyString("Username") != "")) {
+        $this->getPlayerStats();
+      }
   }
 
   private function getPlayerStats() {
@@ -27,6 +29,6 @@ class IPS_CoD_WWII extends IPSModule {
     $Player = new Player($Connector->getPlayer());
 
     SetValue($this->GetIDForIdent("Username"), $Player->getUsername());
-    SetValue($this->GetIDForIdent("Username"), $Player->getPlatform());
+    SetValue($this->GetIDForIdent("Platform"), $Player->getPlatform());
   }
 }

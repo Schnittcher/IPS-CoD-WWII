@@ -11,7 +11,7 @@ class IPS_CoD_WWII_Userstat extends IPSModule {
     $this->RegisterPropertyString("Username","");
     $this->RegisterPropertyString("Platform","");
 
-    $this->RegisterVariableBoolean("Update", $this->Translate("Update"), "", 0);
+    $this->RegisterVariableBoolean("Update", $this->Translate("Update"), "~Switch", 0);
     $this->RegisterVariableString("Username", $this->Translate("Username"), "", 0);
     $this->RegisterVariableString("Platform", $this->Translate("Platform"),"", 1);
     $this->RegisterVariableInteger("Level", $this->Translate("Level"),"", 2);

@@ -3,10 +3,11 @@
     [
       { "type": "ValidationTextBox", "name": "Username", "caption": "Username" },
       { "type": "Select", "name": "Platform", "caption": "Platform",
-    "options": [
-        { "label": "PSN", "value": "psn" },
-        { "label": "XBOX", "value": "xbl" },
-        { "label": "Steam", "value": "steam" },
-    ]}
+          "options": [
+              { "label": "PSN", "value": "psn" },
+              { "label": "XBOX", "value": "xbl" },
+              { "label": "Steam", "value": "steam" }
+          ]
+      }
     ]
 }

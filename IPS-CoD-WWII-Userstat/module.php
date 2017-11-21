@@ -11,6 +11,7 @@ class IPS_CoD_WWII_Userstat extends IPSModule {
     $this->RegisterPropertyString("Username","");
     $this->RegisterPropertyString("Platform","");
 
+    $this->RegisterVariableBoolean("Update", $this->Translate("Update"), 0, 0);
     $this->RegisterVariableString("Username", $this->Translate("Username"), "", 0);
     $this->RegisterVariableString("Platform", $this->Translate("Platform"),"", 1);
     $this->RegisterVariableInteger("Level", $this->Translate("Level"),"", 2);
@@ -43,6 +44,8 @@ class IPS_CoD_WWII_Userstat extends IPSModule {
     $this->RegisterVariableInteger("CurrentWinStreak", $this->Translate("Current Win Streak"),"", 27);
     $this->RegisterVariableInteger("PrestigeShopTokens", $this->Translate("Prestige Shop Tokens"),"", 28);
     $this->RegisterVariableInteger("UnlockPoints", $this->Translate("Unlock Points"),"", 29);
+
+    $this->EnableAction("Update");
   }
 
   public function ApplyChanges() {
@@ -90,4 +93,13 @@ class IPS_CoD_WWII_Userstat extends IPSModule {
     SetValue($this->GetIDForIdent("PrestigeShopTokens"), $Player->getPrestigeShopTokens());
     SetValue($this->GetIDForIdent("UnlockPoints"), $Player->getUnlockPoints());
   }
+  public function RequestAction($Ident, $Value) {
+      switch($Ident) {
+          case "Update":
+              $this->getPlayerStats();
+              SetValue($this->GetIDForIdent("Update"),0);
+              break;
+          default:
+              throw new Exception("Invalid Ident");
+      }
 }

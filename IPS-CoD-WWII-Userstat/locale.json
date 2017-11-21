@@ -1,0 +1,37 @@
+{
+    "translations": {
+        "de": {
+            "Username": "Username",
+            "Platform": "Platform",
+            "Level": "Level",
+            "Prestige": "Prestige",
+            "Kills": "Kills",
+            "Deaths": "Tode",
+            "Suicides": "Selbstmorde",
+            "KDRatio": "KDRatio",
+            "Best Kills": "Beste Kills",
+            "Kill Streak": "Kill Serie",
+            "Win Streak": "Gewinn Serie",
+            "Win Streak": "Gewinnserie",
+            "Headshots": "Kopfschüsse",
+            "Accuracy": "Genauigkeit",
+            "Matches Played": "Absolvierte Spiele",
+            "Matches Completed": "Abgeschlossene Spiele",
+            "Losses": "Verlorene Spiele",
+            "Wins": "Gewonnene Spiele",
+            "Time Played": "Gespielte Zeit",
+            "Time Played Allies": "Gespielte Zeit (Allierte)",
+            "Time Played Axis": "Gespielte Zeit (Achsenmächte)",
+            "Points": "CoD Punkte",
+            "Score": "Gesamte Punkte/Ergebnis",
+            "Best Score": "Bestes Ergebnis",
+            "TotalXP": "TotalXP",
+            "Destructions": "Zerstörungen",
+            "Captures": "Eroberungen",
+            "Money": "Geld",
+            "Current Win Streak": "Current Win Streak",
+            "Prestige Shop Tokens": "Prestige Shop Tokens",
+            "Unlock Points": "Unlock Points"
+        }
+    }
+}

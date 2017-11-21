@@ -13,36 +13,36 @@ class IPS_CoD_WWII_Userstat extends IPSModule {
 
     $this->RegisterVariableString("Username", "Username", "", 0);
     $this->RegisterVariableString("Platform", "Platform","", 1);
-    $this->RegisterVariableString("Level", "Level","", 2);
-    $this->RegisterVariableString("Prestige", "Prestige","", 3);
+    $this->RegisterVariableInteger("Level", "Level","", 2);
+    $this->RegisterVariableInteger("Prestige", "Prestige","", 3);
 
-    $this->RegisterVariableString("Kills", "Kills","", 4);
-    $this->RegisterVariableString("Deaths", "Deaths","", 5);
-    $this->RegisterVariableString("Suicides", "Suicides","", 6);
-    $this->RegisterVariableString("KDRatio", "KDRatio","", 7);
-    $this->RegisterVariableString("BestKills", "BestKills","", 8);
-    $this->RegisterVariableString("KillStreak", "KillStreak","", 9);
-    $this->RegisterVariableString("WinStreak", "WinStreak","", 10);
-    $this->RegisterVariableString("Headshots", "Headshots","", 11);
-    $this->RegisterVariableString("Accuracy", "Accuracy","", 12);
-    $this->RegisterVariableString("MatchesPlayed", "MatchesPlayed","", 13);
-    $this->RegisterVariableString("MatchesCompleted", "MatchesCompleted","", 14);
-    $this->RegisterVariableString("Losses", "Losses","", 15);
-    $this->RegisterVariableString("Wins", "Wins","", 16);
-    $this->RegisterVariableString("TimePlayed", "TimePlayed","", 17);
-    $this->RegisterVariableString("TimePlayedAllies", "TimePlayedAllies","", 18);
-    $this->RegisterVariableString("TimePlayedAxis", "TimePlayedAxis","", 19);
-    $this->RegisterVariableString("Points", "Points","", 20);
-    $this->RegisterVariableString("Score", "Score","", 21);
-    $this->RegisterVariableString("BestScore", "BestScore","", 22);
-    $this->RegisterVariableString("TotalXP", "TotalXP","", 23);
-    $this->RegisterVariableString("Destructions", "Destructions","", 24);
-    $this->RegisterVariableString("Captures", "Captures","", 25);
+    $this->RegisterVariableInteger("Kills", "Kills","", 4);
+    $this->RegisterVariableInteger("Deaths", "Deaths","", 5);
+    $this->RegisterVariableInteger("Suicides", "Suicides","", 6);
+    $this->RegisterVariableFloat("KDRatio", "KDRatio","", 7);
+    $this->RegisterVariableInteger("BestKills", "BestKills","", 8);
+    $this->RegisterVariableInteger("KillStreak", "KillStreak","", 9);
+    $this->RegisterVariableInteger("WinStreak", "WinStreak","", 10);
+    $this->RegisterVariableInteger("Headshots", "Headshots","", 11);
+    $this->RegisterVariableFloat("Accuracy", "Accuracy","", 12);
+    $this->RegisterVariableInteger("MatchesPlayed", "MatchesPlayed","", 13);
+    $this->RegisterVariableInteger("MatchesCompleted", "MatchesCompleted","", 14);
+    $this->RegisterVariableInteger("Losses", "Losses","", 15);
+    $this->RegisterVariableInteger("Wins", "Wins","", 16);
+    $this->RegisterVariableInteger("TimePlayed", "TimePlayed","", 17);
+    $this->RegisterVariableInteger("TimePlayedAllies", "TimePlayedAllies","", 18);
+    $this->RegisterVariableInteger("TimePlayedAxis", "TimePlayedAxis","", 19);
+    $this->RegisterVariableInteger("Points", "Points","", 20);
+    $this->RegisterVariableInteger("Score", "Score","", 21);
+    $this->RegisterVariableInteger("BestScore", "BestScore","", 22);
+    $this->RegisterVariableInteger("TotalXP", "TotalXP","", 23);
+    $this->RegisterVariableInteger("Destructions", "Destructions","", 24);
+    $this->RegisterVariableInteger("Captures", "Captures","", 25);
 
-    $this->RegisterVariableString("Money", "Money","", 26);
-    $this->RegisterVariableString("CurrentWinStreak", "CurrentWinStreak","", 27);
-    $this->RegisterVariableString("PrestigeShopTokens", "PrestigeShopTokens","", 28);
-    $this->RegisterVariableString("UnlockPoints", "UnlockPoints","", 29);
+    $this->RegisterVariableFloat("Money", "Money","", 26);
+    $this->RegisterVariableInteger("CurrentWinStreak", "CurrentWinStreak","", 27);
+    $this->RegisterVariableInteger("PrestigeShopTokens", "PrestigeShopTokens","", 28);
+    $this->RegisterVariableInteger("UnlockPoints", "UnlockPoints","", 29);
   }
 
   public function ApplyChanges() {

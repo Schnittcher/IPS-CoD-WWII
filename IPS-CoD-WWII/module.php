@@ -17,7 +17,7 @@ class IPS_CoD_WWII extends IPSModule {
     $this->RegisterVariableString("Prestige", "Prestige");
 
     $this->RegisterVariableString("Kills", "Kills");
-    $this->RegisterVariableString("Deahts", "Deaths");
+    $this->RegisterVariableString("Deaths", "Deaths");
     $this->RegisterVariableString("Suicides", "Suicides");
     $this->RegisterVariableString("KDRatio", "KDRatio");
     $this->RegisterVariableString("BestKills", "BestKills");

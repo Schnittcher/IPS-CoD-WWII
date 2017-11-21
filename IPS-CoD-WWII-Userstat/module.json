@@ -1,11 +1,11 @@
 {
 	"id": "{9EC1F842-6E74-4FAE-B38A-5635B140BB78}",
-	"name": "IPS_CoD_WWII",
+	"name": "IPS_CoD_WWII_Userstat",
 	"type": 3,
 	"vendor": "Kai Schnittcher",
-	"aliases": ["IPS_CoD_WWII"],
+	"aliases": ["IPS_CoD_WWII_Userstat"],
 	"parentRequirements": [""],
 	"childRequirements": [""],
 	"implemented": [""],
-	"prefix": "CoD_WWII"
+	"prefix": "CoD_WWII_Userstat"
 }

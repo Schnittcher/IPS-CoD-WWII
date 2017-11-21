@@ -3,7 +3,7 @@ require __DIR__.'/../libs/cConnector.php';
 require __DIR__.'/../libs/cMatch.php';
 require __DIR__.'/../libs/cPlayer.php';
 
-class IPS_CoD_WWII extends IPSModule {
+class IPS_CoD_WWII_Userstat extends IPSModule {
 
   public function Create() {
     //Never delete this line!
@@ -11,38 +11,38 @@ class IPS_CoD_WWII extends IPSModule {
     $this->RegisterPropertyString("Username","");
     $this->RegisterPropertyString("Platform","");
 
-    $this->RegisterVariableString("Username", "Username");
-    $this->RegisterVariableString("Platform", "Platform");
-    $this->RegisterVariableString("Level", "Level");
-    $this->RegisterVariableString("Prestige", "Prestige");
+    $this->RegisterVariableString("Username", "Username", "", 0);
+    $this->RegisterVariableString("Platform", "Platform","", 1);
+    $this->RegisterVariableString("Level", "Level","", 2);
+    $this->RegisterVariableString("Prestige", "Prestige","", 3);
 
-    $this->RegisterVariableString("Kills", "Kills");
-    $this->RegisterVariableString("Deaths", "Deaths");
-    $this->RegisterVariableString("Suicides", "Suicides");
-    $this->RegisterVariableString("KDRatio", "KDRatio");
-    $this->RegisterVariableString("BestKills", "BestKills");
-    $this->RegisterVariableString("KillStreak", "KillStreak");
-    $this->RegisterVariableString("WinStreak", "WinStreak");
-    $this->RegisterVariableString("Headshots", "Headshots");
-    $this->RegisterVariableString("Accuracy", "Accuracy");
-    $this->RegisterVariableString("MatchesPlayed", "MatchesPlayed");
-    $this->RegisterVariableString("MatchesCompleted", "MatchesCompleted");
-    $this->RegisterVariableString("Losses", "Losses");
-    $this->RegisterVariableString("Wins", "Wins");
-    $this->RegisterVariableString("TimePlayed", "TimePlayed");
-    $this->RegisterVariableString("TimePlayedAllies", "TimePlayedAllies");
-    $this->RegisterVariableString("TimePlayedAxis", "TimePlayedAxis");
-    $this->RegisterVariableString("Points", "Points");
-    $this->RegisterVariableString("Score", "Score");
-    $this->RegisterVariableString("BestScore", "BestScore");
-    $this->RegisterVariableString("TotalXP", "TotalXP");
-    $this->RegisterVariableString("Destructions", "Destructions");
-    $this->RegisterVariableString("Captures", "Captures");
+    $this->RegisterVariableString("Kills", "Kills","", 4);
+    $this->RegisterVariableString("Deaths", "Deaths","", 5);
+    $this->RegisterVariableString("Suicides", "Suicides","", 6);
+    $this->RegisterVariableString("KDRatio", "KDRatio","", 7);
+    $this->RegisterVariableString("BestKills", "BestKills","", 8);
+    $this->RegisterVariableString("KillStreak", "KillStreak","", 9);
+    $this->RegisterVariableString("WinStreak", "WinStreak","", 10);
+    $this->RegisterVariableString("Headshots", "Headshots","", 11);
+    $this->RegisterVariableString("Accuracy", "Accuracy","", 12);
+    $this->RegisterVariableString("MatchesPlayed", "MatchesPlayed","", 13);
+    $this->RegisterVariableString("MatchesCompleted", "MatchesCompleted","", 14);
+    $this->RegisterVariableString("Losses", "Losses","", 15);
+    $this->RegisterVariableString("Wins", "Wins","", 16);
+    $this->RegisterVariableString("TimePlayed", "TimePlayed","", 17);
+    $this->RegisterVariableString("TimePlayedAllies", "TimePlayedAllies","", 18);
+    $this->RegisterVariableString("TimePlayedAxis", "TimePlayedAxis","", 19);
+    $this->RegisterVariableString("Points", "Points","", 20);
+    $this->RegisterVariableString("Score", "Score","", 21);
+    $this->RegisterVariableString("BestScore", "BestScore","", 22);
+    $this->RegisterVariableString("TotalXP", "TotalXP","", 23);
+    $this->RegisterVariableString("Destructions", "Destructions","", 24);
+    $this->RegisterVariableString("Captures", "Captures","", 25);
 
-    $this->RegisterVariableString("Money", "Money");
-    $this->RegisterVariableString("CurrentWinStreak", "CurrentWinStreak");
-    $this->RegisterVariableString("PrestigeShopTokens", "PrestigeShopTokens");
-    $this->RegisterVariableString("UnlockPoints", "UnlockPoints");
+    $this->RegisterVariableString("Money", "Money","", 26);
+    $this->RegisterVariableString("CurrentWinStreak", "CurrentWinStreak","", 27);
+    $this->RegisterVariableString("PrestigeShopTokens", "PrestigeShopTokens","", 28);
+    $this->RegisterVariableString("UnlockPoints", "UnlockPoints","", 29);
   }
 
   public function ApplyChanges() {

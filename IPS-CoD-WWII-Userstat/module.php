@@ -102,4 +102,5 @@ class IPS_CoD_WWII_Userstat extends IPSModule {
           default:
               throw new Exception("Invalid Ident");
       }
+  }
 }

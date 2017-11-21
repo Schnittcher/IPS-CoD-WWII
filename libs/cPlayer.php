@@ -179,7 +179,7 @@
 
     private function lifetimeStat($Request)
     {
-      $this->liftetime["kills"] = $Request["lifetime"]["all"]["kills"];
+      $this->lifetime["kills"] = $Request["lifetime"]["all"]["kills"];
       $this->lifetime["accuracy"] = $Request["lifetime"]["all"]["accuracy"];
       $this->lifetime["losses"] = $Request["lifetime"]["all"]["losses"];
       $this->lifetime["timePlayedAllies"] = $Request["lifetime"]["all"]["timePlayedAllies"];
@@ -188,6 +188,7 @@
       $this->lifetime["headshots"] = $Request["lifetime"]["all"]["headshots"];
       $this->lifetime["plants"] = $Request["lifetime"]["all"]["plants"];
       $this->lifetime["deaths"] = $Request["lifetime"]["all"]["deaths"];
+      $this->lifetime["popints"] = $Request["lifetime"]["all"]["points"];
       $this->lifetime["wins"] = $Request["lifetime"]["all"]["wins"];
       $this->lifetime["killStreak"] = $Request["lifetime"]["all"]["killStreak"];
       $this->lifetime["kdRatio"] = $Request["lifetime"]["all"]["kdRatio"];

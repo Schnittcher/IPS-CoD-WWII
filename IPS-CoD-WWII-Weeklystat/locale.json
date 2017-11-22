@@ -1,0 +1,28 @@
+{
+    "translations": {
+        "de": {
+            "Update": "Aktualisieren",
+            "Username": "Username",
+            "Platform": "Platform",
+            "Level": "Level",
+            "Prestige": "Prestige",
+            "Kills": "Kills",
+            "Deaths": "Tode",
+            "Assists": "Assists",
+            "KDRatio": "KDRatio",
+            "ShotsFired": "Abgegebene Schüsse",
+            "Shots Landed": "Getroffene Schüsse",
+            "Shots Missed": "Nicht getreoffene Schüsse",
+            "Headshots": "Kopfschüsse",
+            "Accuracy": "Genauigkeit",
+            "Matches Played": "Absolvierte Spiele",
+            "Matches Completed": "Abgeschlossene Spiele",
+            "Losses": "Verlorene Spiele",
+            "Wins": "Gewonnene Spiele",
+            "Time Played": "Gespielte Zeit",
+            "Score": "Gesamte Punkte/Ergebnis",
+            "Score per Minute": "Punkte pro Minute",
+            "TotalXP": "TotalXP"
+        }
+    }
+}

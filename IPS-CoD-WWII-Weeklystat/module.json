@@ -1,0 +1,11 @@
+{
+	"id": "{2F9797B8-F826-41E5-ACB3-288365231DE9}",
+	"name": "IPS_CoD_WWII_Weeklystat",
+	"type": 3,
+	"vendor": "Kai Schnittcher",
+	"aliases": ["IPS_CoD_WWII_Weeklystat"],
+	"parentRequirements": [""],
+	"childRequirements": [""],
+	"implemented": [""],
+	"prefix": "CoD_WWII_Weeklystat"
+}

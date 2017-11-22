@@ -21,9 +21,9 @@ class IPS_CoD_WWII_Weeklystat extends IPSModule {
     $this->RegisterVariableInteger("Deaths", $this->Translate("Deaths"),"", 5);
     $this->RegisterVariableInteger("Assists", $this->Translate("Assists"),"", 6);
     $this->RegisterVariableFloat("KDRatio", $this->Translate("KDRatio"),"", 7);
-    $this->RegisterVariableInteger("ShotsFired", $this->Translate("Shots Fired"),"", 8;
+    $this->RegisterVariableInteger("ShotsFired", $this->Translate("Shots Fired"),"", 8);
     $this->RegisterVariableInteger("ShotsLanded", $this->Translate("Shots Landed"),"", 9);
-    $this->RegisterVariableInteger("ShotsMissed", $this->Translate("Shots Missed"),"", 10;
+    $this->RegisterVariableInteger("ShotsMissed", $this->Translate("Shots Missed"),"", 10);
     $this->RegisterVariableInteger("Headshots", $this->Translate("Headshots"),"", 11);
     $this->RegisterVariableFloat("Accuracy", $this->Translate("Accuracy"),"", 12);
     $this->RegisterVariableInteger("MatchesPlayed", $this->Translate("Matches Played"),"", 13);

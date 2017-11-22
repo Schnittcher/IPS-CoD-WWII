@@ -54,8 +54,8 @@ class IPS_CoD_WWII_Weeklystat extends IPSModule {
     SetValue($this->GetIDForIdent("Level"), $Player->getLevel());
     SetValue($this->GetIDForIdent("Prestige"), $Player->getPrestige());
 
-    SetValue($this->GetIDForIdent("Kills"), $Player->getWeeklyWinsKills());
-    SetValue($this->GetIDForIdent("Deaths"), $Player->getWeeklyWinsDeaths());
+    SetValue($this->GetIDForIdent("Kills"), $Player->getWeeklyKills());
+    SetValue($this->GetIDForIdent("Deaths"), $Player->getWeeklyDeaths());
     SetValue($this->GetIDForIdent("Assists"), $Player->getWeeklyAssists());
     SetValue($this->GetIDForIdent("KDRatio"), $Player->getWeeklyKdRatio());
     SetValue($this->GetIDForIdent("ShotsFired"), $Player->getWeeklyShotsFired());

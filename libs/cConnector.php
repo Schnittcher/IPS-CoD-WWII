@@ -48,11 +48,11 @@
       switch ($type) {
         case 'player':
           $url = str_replace("%platform%", $this->platform, PLAYER);
-          $url = str_replace("%player%", $this->player, $url);
+          $url = str_replace("%player%", rawurlencode($this->player), $url);
           break;
         case 'match':
           $url = str_replace("%platform%", $this->platform, MATCHES);
-          $url = str_replace("%player%", $this->player, $url);
+          $url = str_replace("%player%", rawurlencode($this->player), $url);
           break;
         default:
           # code...

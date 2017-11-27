@@ -336,32 +336,78 @@
 
     private function weeklyStat($Request)
     {
-      $this->weekly["kills"] = $Request["weekly"]["all"]["kills"];
-      $this->weekly["distanceTravelled"] = $Request["weekly"]["all"]["distanceTravelled"];
-      $this->weekly["divisionXpMountain"] = $Request["weekly"]["all"]["divisionXpMountain"];
-      $this->weekly["accuracy"] = $Request["weekly"]["all"]["accuracy"];
-      $this->weekly["divisionXpExpeditionary"] = $Request["weekly"]["all"]["divisionXpExpeditionary"];
-      $this->weekly["losses"] = $Request["weekly"]["all"]["losses"];
-      $this->weekly["shotsLanded"] = $Request["weekly"]["all"]["shotsLanded"];
-      $this->weekly["score"] = $Request["weekly"]["all"]["score"];
-      $this->weekly["totalXp"] = $Request["weekly"]["all"]["totalXp"];
-      $this->weekly["headshots"] = $Request["weekly"]["all"]["headshots"];
-      $this->weekly["assists"] = $Request["weekly"]["all"]["assists"];
-      $this->weekly["scorePerMinute"] = $Request["weekly"]["all"]["scorePerMinute"];
-      $this->weekly["deaths"] = $Request["weekly"]["all"]["deaths"];
-      $this->weekly["wins"] = $Request["weekly"]["all"]["wins"];
-      $this->weekly["shotsMissed"] = $Request["weekly"]["all"]["shotsMissed"];
-      $this->weekly["kdRatio"] = $Request["weekly"]["all"]["kdRatio"];
-      $this->weekly["divisionXpInfantry"] = $Request["weekly"]["all"]["divisionXpInfantry"];
-      $this->weekly["divisionXpArmored"] = $Request["weekly"]["all"]["divisionXpArmored"];
-      $this->weekly["divisionXpAirborne"] = $Request["weekly"]["all"]["divisionXpAirborne"];
-      $this->weekly["avgSpeed"] = $Request["weekly"]["all"]["avgSpeed"];
-      $this->weekly["avgKillDistance"] = $Request["weekly"]["all"]["avgKillDistance"];
-      $this->weekly["timePlayed"] = $Request["weekly"]["all"]["timePlayed"];
-      $this->weekly["matchesPlayed"] = $Request["weekly"]["all"]["matchesPlayed"];
-      $this->weekly["divisionXpNone"] = $Request["weekly"]["all"]["divisionXpNone"];
-      $this->weekly["shotsFired"] = $Request["weekly"]["all"]["shotsFired"];
-
+      if (array_key_exists('kills', $Request["weekly"]["all"])) {
+        $this->weekly["kills"] = $Request["weekly"]["all"]["kills"];
+      }
+      if (array_key_exists('distanceTravelled', $Request["weekly"]["all"])) {
+        $this->weekly["distanceTravelled"] = $Request["weekly"]["all"]["distanceTravelled"];
+      }
+      if (array_key_exists('divisionXpMountain', $Request["weekly"]["all"])) {
+        $this->weekly["divisionXpMountain"] = $Request["weekly"]["all"]["divisionXpMountain"];
+      }
+      if (array_key_exists('divisionXpExpeditionary', $Request["weekly"]["all"])) {
+        $this->weekly["divisionXpExpeditionary"] = $Request["weekly"]["all"]["divisionXpExpeditionary"];
+      }
+      if (array_key_exists('losses', $Request["weekly"]["all"])) {
+        $this->weekly["losses"] = $Request["weekly"]["all"]["losses"];
+      }
+      if (array_key_exists('shotsLanded', $Request["weekly"]["all"])) {
+        $this->weekly["shotsLanded"] = $Request["weekly"]["all"]["shotsLanded"];
+      }
+      if (array_key_exists('score', $Request["weekly"]["all"])) {
+        $this->weekly["score"] = $Request["weekly"]["all"]["score"];
+      }
+      if (array_key_exists('totalXp', $Request["weekly"]["all"])) {
+        $this->weekly["totalXp"] = $Request["weekly"]["all"]["totalXp"];
+      }
+      if (array_key_exists('headshots', $Request["weekly"]["all"])) {
+        $this->weekly["headshots"] = $Request["weekly"]["all"]["headshots"];
+      }
+      if (array_key_exists('assists', $Request["weekly"]["all"])) {
+        $this->weekly["assists"] = $Request["weekly"]["all"]["assists"];
+      }
+      if (array_key_exists('scorePerMinute', $Request["weekly"]["all"])) {
+        $this->weekly["scorePerMinute"] = $Request["weekly"]["all"]["scorePerMinute"];
+      }
+      if (array_key_exists('deaths', $Request["weekly"]["all"])) {
+        $this->weekly["deaths"] = $Request["weekly"]["all"]["deaths"];
+      }
+      if (array_key_exists('wins', $Request["weekly"]["all"])) {
+        $this->weekly["wins"] = $Request["weekly"]["all"]["wins"];
+      }
+      if (array_key_exists('shotsMissed', $Request["weekly"]["all"])) {
+        $this->weekly["shotsMissed"] = $Request["weekly"]["all"]["shotsMissed"];
+      }
+      if (array_key_exists('kdRatio', $Request["weekly"]["all"])) {
+        $this->weekly["kdRatio"] = $Request["weekly"]["all"]["kdRatio"];
+      }
+      if (array_key_exists('divisionXpInfantry', $Request["weekly"]["all"])) {
+        $this->weekly["divisionXpInfantry"] = $Request["weekly"]["all"]["divisionXpInfantry"];
+      }
+      if (array_key_exists('divisionXpArmored', $Request["weekly"]["all"])) {
+        $this->weekly["divisionXpArmored"] = $Request["weekly"]["all"]["divisionXpArmored"];
+      }
+      if (array_key_exists('avgSpeed', $Request["weekly"]["all"])) {
+        $this->weekly["avgSpeed"] = $Request["weekly"]["all"]["avgSpeed"];
+      }
+      if (array_key_exists('avgKillDistance', $Request["weekly"]["all"])) {
+        $this->weekly["avgKillDistance"] = $Request["weekly"]["all"]["avgKillDistance"];
+      }
+      if (array_key_exists('timePlayed', $Request["weekly"]["all"])) {
+        $this->weekly["timePlayed"] = $Request["weekly"]["all"]["timePlayed"];
+      }
+      if (array_key_exists('matchesPlayed', $Request["weekly"]["all"])) {
+        $this->weekly["matchesPlayed"] = $Request["weekly"]["all"]["matchesPlayed"];
+      }
+      if (array_key_exists('divisionXpNone', $Request["weekly"]["all"])) {
+        $this->weekly["divisionXpNone"] = $Request["weekly"]["all"]["divisionXpNone"];
+      }
+      if (array_key_exists('divisionXpNone', $Request["weekly"]["all"])) {
+        $this->weekly["divisionXpNone"] = $Request["weekly"]["all"]["divisionXpNone"];
+      }
+      if (array_key_exists('shotsFired', $Request["weekly"]["all"])) {
+        $this->weekly["shotsFired"] = $Request["weekly"]["all"]["shotsFired"];
+      }
     }
   }
 ?>

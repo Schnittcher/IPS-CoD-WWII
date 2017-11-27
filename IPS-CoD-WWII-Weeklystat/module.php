@@ -46,7 +46,7 @@ class IPS_CoD_WWII_Weeklystat extends IPSModule {
   }
 
   private function getPlayerStats() {
-    $Connector = new Connector($this->ReadPropertyString("Platform"),rawurlencode($this->ReadPropertyString("Username")));
+    $Connector = new Connector($this->ReadPropertyString("Platform"),$this->ReadPropertyString("Username")));
     $Player = new Player($Connector->getPlayer());
 
     SetValue($this->GetIDForIdent("Username"), $Player->getUsername());
